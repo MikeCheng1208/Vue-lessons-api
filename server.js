@@ -22,6 +22,11 @@ const users = [
     name: "姚偉揚",
   },
   {
+    username: "charlie",
+    password: "7654321",
+    name: "查理",
+  },
+  {
     username: "mike",
     password: "7654321",
     name: "成智遠",
