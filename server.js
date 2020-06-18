@@ -33,7 +33,7 @@ const users = [
 
 const lessons = [];
 let images = [];
-const IMAGES_LIMIT = 3;
+const IMAGES_LIMIT = 5;
 
 const saveImage = (dataURL) => {
   if (dataURL.indexOf("http") === 0) {
