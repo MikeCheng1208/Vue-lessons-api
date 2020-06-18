@@ -10,7 +10,7 @@ const app = express();
 app.listen(PORT, () => console.log(`app started at http://${HOST}:${PORT}`));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true, limit: "500kb" }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "200kb" }));
 app.use(cors());
 
 const users = [
