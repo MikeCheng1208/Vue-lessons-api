@@ -123,3 +123,16 @@ app.get("/exists/:username", (req, res) => {
     exists: user !== undefined,
   });
 });
+// ================================================================
+app.get("/photo/list", (req, res) => {
+  res.json([
+    { url: "https://source.unsplash.com/collection/190727/500x300" },
+    { url: "https://source.unsplash.com/collection/dsadqw/500x300" },
+    { url: "https://source.unsplash.com/collection/1231sd/500x300" },
+    { url: "https://source.unsplash.com/collection/das2451/500x300" },
+    { url: "https://source.unsplash.com/collection/cxzht12/500x300" },
+    { url: "https://source.unsplash.com/collection/ewqsds45/500x300" },
+    { url: "https://source.unsplash.com/collection/sadgy65/500x300" },
+  ]);
+});
+// ================================================================
