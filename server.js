@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const crypto = require("crypto");
 const _ = require("lodash");
+const htmlContent = require("./html.js");
 
 const { PORT = 3000, HOST = "localhost" } = process.env;
 
@@ -134,5 +135,8 @@ app.get("/photo/list", (req, res) => {
     { url: "https://source.unsplash.com/collection/ewqsds45/500x300" },
     { url: "https://source.unsplash.com/collection/sadgy65/500x300" },
   ]);
+});
+app.get("/dom/content", (req, res) => {
+  res.json({ html: htmlContent });
 });
 // ================================================================
