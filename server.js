@@ -4,6 +4,7 @@ const cors = require("cors");
 const crypto = require("crypto");
 const _ = require("lodash");
 const htmlContent = require("./html.js");
+const cityJson = require("./city.json");
 
 const { PORT = 3000, HOST = "localhost" } = process.env;
 
@@ -140,3 +141,7 @@ app.get("/dom/content", (req, res) => {
   res.json({ html: htmlContent });
 });
 // ================================================================
+
+app.get("/city/list", (req, res) => {
+  res.json(cityJson);
+});
