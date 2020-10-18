@@ -145,3 +145,52 @@ app.get("/dom/content", (req, res) => {
 app.get("/city/list", (req, res) => {
   res.json(cityJson);
 });
+const userAuth = [
+  {
+    username: "mike",
+    password: "123456789",
+    sex: "boy",
+    email: "qwer@gmail.com",
+    age: "12",
+    terms: false,
+  },
+];
+
+app.post("/auth/registered", (req, res) => {
+  const { username, password, sex, email, age, terms } = req.body;
+  const user_email = userAuth.find((u) => u.email === email);
+  const user_name = userAuth.find((u) => u.username === username);
+  const regex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})*$/;
+  const errMsg = {};
+  if (password.length < 6) {
+    errMsg["password"] = "密碼長度須超過6個字元";
+  }
+  if (username === "") {
+    errMsg["username"] = "使用者名稱不得為空";
+  }
+  if (password === "") {
+    errMsg["password"] = "密碼不得為空";
+  }
+  if (email === "") {
+    errMsg["email"] = "email不得為空";
+  }
+  if (!regex.test(email)) {
+    errMsg["email"] = "請輸入正確的email格式";
+  }
+  if (user_email) {
+    errMsg["email"] = "此email已註冊過";
+  }
+  if (user_name) {
+    errMsg["username"] = "此使用者名稱已註冊過";
+  }
+  let status_code = Object.keys(errMsg).length === 0 ? 200 : 403;
+  const content = {
+    success: status_code === 200,
+  };
+  if (status_code === 200) {
+    content["data"] = { username, password, sex, email, age, terms };
+  } else {
+    content["error_message"] = errMsg;
+  }
+  res.status(status_code).send(content);
+});
