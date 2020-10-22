@@ -196,6 +196,20 @@ app.post("/auth/registered", (req, res) => {
   res.status(status_code).send(content);
 });
 
+// =================================================================
 app.get("/courses/list", (req, res) => {
   res.json(coursesJson);
+});
+
+app.get("/courses/:id", (req, res) => {
+  const { id } = req.params;
+  const isId = ["286", "419", "418"].includes(id);
+  const status_code = isId ? 200 : 403;
+  const content = {};
+  if (status_code === 200) {
+    content["data"] = coursesJson.filter((item) => `${item.id}` === id);
+  } else {
+    content["error_message"] = "找不到此課程";
+  }
+  res.status(status_code).send(content);
 });
