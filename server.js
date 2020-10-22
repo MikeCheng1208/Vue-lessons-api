@@ -5,6 +5,7 @@ const crypto = require("crypto");
 const _ = require("lodash");
 const htmlContent = require("./html.js");
 const cityJson = require("./city.json");
+const coursesJson = require("./courses.json");
 
 const { PORT = 3000, HOST = "localhost" } = process.env;
 
@@ -193,4 +194,8 @@ app.post("/auth/registered", (req, res) => {
     content["error_message"] = errMsg;
   }
   res.status(status_code).send(content);
+});
+
+app.get("/courses/list", (req, res) => {
+  res.json(coursesJson);
 });
