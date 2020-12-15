@@ -120,6 +120,19 @@ app.post("/login", (req, res) => {
   }
 });
 
+app.post("/testToken", (req, res) => {
+  const token = req.headers.authorization;
+  let statue_code = 200;
+  let content = {};
+  if (token !== "636b6030-3ee3-11eb-b378-0242ac130002") {
+    statue_code = 403;
+    content["error_message"] = "無效的 token";
+  } else {
+    content["success"] = "ok";
+  }
+  res.status(statue_code).send(content);
+});
+
 app.get("/exists/:username", (req, res) => {
   const { username } = req.params;
   const user = users.find((u) => u.username === username);
