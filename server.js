@@ -111,6 +111,7 @@ app.post("/login", (req, res) => {
     res.json({
       success: true,
       name: user.name,
+      token: "636b6030-3ee3-11eb-b378-0242ac130002",
     });
   } else {
     res.json({
