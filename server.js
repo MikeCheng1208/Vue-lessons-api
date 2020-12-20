@@ -142,6 +142,10 @@ app.get("/exists/:username", (req, res) => {
 });
 // ================================================================
 app.get("/photo/list", (req, res) => {
+  if (req.query.status === "error") {
+    res.status(403).send({ error_msg: "未知的錯誤" });
+    return;
+  }
   res.json([
     { url: "https://picsum.photos/500/300?random=1" },
     { url: "https://picsum.photos/500/300?random=2" },
