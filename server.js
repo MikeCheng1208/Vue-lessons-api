@@ -7,7 +7,7 @@ const htmlContent = require("./html.js");
 const cityJson = require("./city.json");
 const coursesJson = require("./courses.json");
 
-const { PORT = 3001, HOST = "localhost" } = process.env;
+const { PORT = 3000, HOST = "localhost" } = process.env;
 
 const app = express();
 app.listen(PORT, () => console.log(`app started at http://${HOST}:${PORT}`));
