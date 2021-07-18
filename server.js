@@ -124,14 +124,11 @@ app.post("/testToken", (req, res) => {
   const token = req.headers.authorization;
   let statue_code = 200;
   const content = {};
-  if (token !== "636b6030-3ee3-11eb-b378-0242ac130002") {
-    statue_code = 403;
-    content["error_message"] = "無效的 token";
-  } else if (!token) {
-    statue_code = 403;
-    content["error_message"] = "無效的 token";
-  } else {
+  if (token === "636b6030-3ee3-11eb-b378-0242ac130002") {
     content["success"] = "ok";
+  } else {
+    statue_code = 403;
+    content["error_message"] = "無效的 token";
   }
   res.status(statue_code).send(content);
 });
