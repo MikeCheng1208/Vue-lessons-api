@@ -6,6 +6,9 @@
 - 精通 VueJS 前端開發完全指南
 - React 完全精通 - 從原理到大量實戰應用
 
+### API deploy to Vercel
+- API 網址 : https://vue-lessons-api.vercel.app/
+
 ---
 
 ### 1. 先安裝套件
