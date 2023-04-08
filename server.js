@@ -231,3 +231,31 @@ app.get("/courses/:id", (req, res) => {
   }
   res.status(status_code).send(content);
 });
+
+// =================================================================
+
+const seoMap = {
+  home: {
+    title: "Nuxt3 高效入門全攻略",
+    description:
+      "最棒的Nuxt3的線上課程、Nust3、Vue3、JavaScript、線上課程、程式",
+    ogImage: "https://picsum.photos/500/300?random=1",
+  },
+  about: {
+    title: "關於我們 - Nuxt3 高效入門全攻略",
+    description:
+      "關於我們、最棒的Nuxt3的線上課程、Nust3、Vue3、JavaScript、線上課程、程式",
+    ogImage: "https://picsum.photos/500/300?random=2",
+  },
+  user: {
+    title: "USER - Nuxt3 高效入門全攻略",
+    description:
+      "USER、最棒的Nuxt3的線上課程、Nust3、Vue3、JavaScript、線上課程、程式",
+    ogImage: "https://picsum.photos/500/300?random=3",
+  },
+};
+
+app.get("/seo/:metatage", (req, res) => {
+  const { metatage } = req.params;
+  res.json(seoMap[metatage]);
+});
