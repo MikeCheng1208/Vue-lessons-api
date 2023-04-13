@@ -12,8 +12,8 @@
     ],
     "routes": [
       {
-        "src": "/images/(.+)",
-        "dest": "public/$1"
+        "src": "public/images/(.+)",
+        "dest": "public/images/$1"
       },
       {
         "src": "/(.*)",
