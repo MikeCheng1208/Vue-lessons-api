@@ -11,7 +11,7 @@ const { PORT = 9527, HOST = "localhost" } = process.env;
 
 const app = express();
 app.listen(PORT, () => console.log(`app started at http://${HOST}:${PORT}`));
-
+app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true, limit: "200kb" }));
 app.use(cors());
@@ -258,4 +258,34 @@ const seoMap = {
 app.get("/seo/:metatage", (req, res) => {
   const { metatage } = req.params;
   res.json(seoMap[metatage]);
+});
+
+// ====投票用 API=============================================================
+
+const voteList = {
+  vue: {
+    path: `http://${HOST}:${PORT}/images/Vue.svg`,
+    name: "vue",
+    count: 0,
+  },
+  react: {
+    path: `http://${HOST}:${PORT}/images/React.svg`,
+    name: "react",
+    count: 0,
+  },
+  angular: {
+    path: `http://${HOST}:${PORT}/images/Angular.svg`,
+    name: "angular",
+    count: 0,
+  },
+};
+
+app.get("/vote/list", (req, res) => {
+  res.json(voteList);
+});
+
+app.post("/vote/add", (req, res) => {
+  const { type } = req.body;
+  voteList[type].count++;
+  res.json(voteList);
 });
