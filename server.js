@@ -264,17 +264,17 @@ app.get("/seo/:metatage", (req, res) => {
 
 const voteList = {
   vue: {
-    path: `http://${HOST}:${PORT}/images/Vue.svg`,
+    path: `https://vue-lessons-api.vercel.app/images/Vue.svg`,
     name: "vue",
     count: 0,
   },
   react: {
-    path: `http://${HOST}:${PORT}/images/React.svg`,
+    path: `https://vue-lessons-api.vercel.app/images/React.svg`,
     name: "react",
     count: 0,
   },
   angular: {
-    path: `http://${HOST}:${PORT}/images/Angular.svg`,
+    path: `https://vue-lessons-api.vercel.app/images/Angular.svg`,
     name: "angular",
     count: 0,
   },
