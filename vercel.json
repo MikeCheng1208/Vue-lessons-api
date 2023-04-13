@@ -16,7 +16,7 @@
         "dest": "/server.js"
       },
       {
-        "src": "/(.+)",
+        "src": "/public/images/(.+)",
         "dest": "/public/$1"
       }
     ]
