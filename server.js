@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path");
 const cors = require("cors");
 const crypto = require("crypto");
 const _ = require("lodash");
@@ -11,7 +12,9 @@ const { PORT = 9527, HOST = "localhost" } = process.env;
 
 const app = express();
 app.listen(PORT, () => console.log(`app started at http://${HOST}:${PORT}`));
-app.use(express.static("public"));
+
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true, limit: "200kb" }));
 app.use(cors());
