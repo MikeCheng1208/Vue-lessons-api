@@ -264,7 +264,6 @@ app.get("/seo/:metatage", (req, res) => {
 });
 
 // ====投票用 API=============================================================
-
 const voteList = {
   vue: {
     path: `https://vue-lessons-api.vercel.app/images/Vue.svg`,
