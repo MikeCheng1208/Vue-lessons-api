@@ -245,7 +245,7 @@ const seoMap = {
     ogImage: "https://picsum.photos/500/300?random=1",
   },
   about: {
-    title: "關於我們-Nuxt3 高效入門全攻略",
+    title: "關於我們 - Nuxt3 高效入門全攻略",
     description:
       "關於我們、最棒的Nuxt3的線上課程、Nust3、Vue3、JavaScript、線上課程、程式",
     ogImage: "https://picsum.photos/500/300?random=2",
