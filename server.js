@@ -123,6 +123,27 @@ app.post("/login", (req, res) => {
   }
 });
 
+app.post("/auth/login", (req, res) => {
+  const { username, password } = req.body;
+  const content = {};
+  let statue_code = 200;
+  const user = users.find(
+    (u) => u.username === username && u.password === password
+  );
+  if (user) {
+    content["data"] = {
+      name: user.name,
+      token: "636b6030-3ee3-11eb-b378-0242ac130002",
+    };
+  } else {
+    statue_code = 403;
+    content["error_message"] = {
+      username: "找不到該使用者",
+    };
+  }
+  res.status(statue_code).send(content);
+});
+
 app.post("/testToken", (req, res) => {
   const token = req.headers.authorization;
   let statue_code = 200;
