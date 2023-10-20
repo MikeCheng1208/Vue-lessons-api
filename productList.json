@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title": "使用 Vue3 開發 Web Component 入門",
+        "content": "使用 Vue3 開發 Web Component 入門. 透過 vite + vue3 快速開發 Web Component 共用組件。",
+        "url": "https://medium.com/i-am-mike/%E4%BD%BF%E7%94%A8-vue3-%E9%96%8B%E7%99%BC-web-component-%E5%85%A5%E9%96%80-1552f8563bc0",
+        "tags": ["frontEnd", "vue"]
+    },
+    {
+        "id": 2,
+        "title": "【Vue 3】ref 跟 reactive 我該怎麼選!?",
+        "content": "隨著 Vue3 的release，大家趨之若鶩的投入Vue3的懷抱，這次Vue3的Composition API 在定義我們的資料的時候要透過 ref 或是 reactive 來定義資料。",
+        "url": "https://medium.com/i-am-mike/vue-3-ref-%E8%B7%9F-reactive-%E6%88%91%E8%A9%B2%E6%80%8E%E9%BA%BC%E9%81%B8-2fb6b6735a3c",
+        "tags": ["frontEnd", "vue"]
+    },
+    {
+        "id": 3,
+        "title": "JavaScript 的 Leetcode 演算之路(一)",
+        "content": "演算法對一個工程師來說是一個非常重要的技能，先撇開在工作上面的實務影響不管，光在求職的過程中，就有許多面試需要考試...",
+        "url": "https://medium.com/i-am-mike/javascript-%E7%9A%84-leetcode-%E6%BC%94%E7%AE%97%E4%B9%8B%E8%B7%AF-%E4%B8%80-3a38bea6dccc",
+        "tags": ["frontEnd", "javascript"]
+    },
+    {
+        "id": 4,
+        "title": "JavaScript 的 Leetcode 演算之路(二)",
+        "content": "上一章節還沒看過的點這裡，這次一樣來分享一個 Easy 的題目，在日常透過這簡單類型的題目來訓練一下自己的大腦...",
+        "url": "https://medium.com/i-am-mike/javascript-%E7%9A%84-leetcode-%E6%BC%94%E7%AE%97%E4%B9%8B%E8%B7%AF-%E4%BA%8C-e4ce3f513c67",
+        "tags": ["frontEnd", "javascript"]
+    },
+    {
+        "id": 5,
+        "title": "JavaScript 的 Leetcode 演算之路(三)",
+        "content": "這次也要來解一個 Easy 的題目，就是這個 922. Sort Array By Parity II ，這個題目本身覺得設計的不錯...",
+        "url": "https://medium.com/i-am-mike/javascript-%E7%9A%84-leetcode-%E6%BC%94%E7%AE%97%E4%B9%8B%E8%B7%AF-%E4%B8%89-6da4641f6816",
+        "tags": ["frontEnd", "javascript"]
+    },
+    {
+        "id": 6,
+        "title": "後端 php 筆記",
+        "content": "這是後端php的筆記",
+        "url": "",
+        "tags": ["backEnd", "php"]
+    },
+    {
+        "id": 7,
+        "title": "後端 java 筆記",
+        "content": "這是後端java的筆記",
+        "url": "",
+        "tags": ["backEnd", "java"]
+    },
+    {
+        "id": 8,
+        "title": "後端 Python 筆記",
+        "content": "這是後端Python的筆記",
+        "url": "",
+        "tags": ["backEnd", "Python"]
+    },
+    {
+        "id": 9,
+        "title": "後端 nodejs 筆記",
+        "content": "這是後端 nodejs 的筆記",
+        "url": "",
+        "tags": ["backEnd", "nodejs"]
+    },
+    {
+        "id": 10,
+        "title": "後端 linux 筆記",
+        "content": "這是後端 linux 的筆記",
+        "url": "",
+        "tags": ["devops", "linux"]
+    },
+    {
+        "id": 11,
+        "title": "後端 docker 筆記",
+        "content": "這是後端 docker 的筆記",
+        "url": "",
+        "tags": ["devops", "docker"]
+    },
+    {
+        "id": 12,
+        "title": "後端 sql 筆記",
+        "content": "這是後端 sql 的筆記",
+        "url": "",
+        "tags": ["mis", "sql"]
+    },
+    {
+        "id": 13,
+        "title": "後端 nosql 筆記",
+        "content": "這是後端 nosql 的筆記",
+        "url": "",
+        "tags": ["mis", "nosql"]
+    },
+    {
+        "id": 14,
+        "title": "後端 nosql 筆記 2",
+        "content": "這是後端 nosql 的筆記 2 ",
+        "url": "",
+        "tags": ["mis", "nosql"]
+    },
+    {
+        "id": 15,
+        "title": "後端 aws 筆記",
+        "content": "這是後端 aws 的筆記",
+        "url": "",
+        "tags": ["mis", "aws"]
+    },
+    {
+        "id": 15,
+        "title": "後端 gcp 筆記",
+        "content": "這是後端 gcp 的筆記",
+        "url": "",
+        "tags": ["mis", "gcp"]
+    }
+]

@@ -7,6 +7,8 @@ const _ = require("lodash");
 const htmlContent = require("./html.js");
 const cityJson = require("./city.json");
 const coursesJson = require("./courses.json");
+const filterTag = require("./filterTag.json");
+const productList = require("./productList.json");
 
 const { PORT = 9527, HOST = "localhost" } = process.env;
 
@@ -311,4 +313,30 @@ app.post("/vote/add", (req, res) => {
   const { type } = req.body;
   voteList[type].count++;
   res.json(voteList);
+});
+
+// ==== filter tag =============================================================
+
+app.get("/nav/tags", (req, res) => {
+  res.json(filterTag);
+});
+
+// http://localhost:9527/nav/tags/product?tag=frontEnd&child=vue
+app.get("/nav/tags/product", (req, res) => {
+  const { tag, child } = req.query;
+  if (tag && child) {
+    const filterList = productList.filter((item) => {
+      return item.tags.includes(tag) && item.tags.includes(child);
+    });
+    res.json(filterList);
+    return;
+  }
+  if (tag) {
+    const filterList = productList.filter((item) => {
+      return item.tags.includes(tag);
+    });
+    res.json(filterList);
+    return;
+  }
+  res.json(productList);
 });

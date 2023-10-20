@@ -1,0 +1,110 @@
+[
+    {
+        "id": "frontEnd",
+        "name": "前端",
+        "child": [
+            {
+                "id": "html",
+                "name": "HTML"
+            },
+            {
+                "id": "css",
+                "name": "CSS"
+            },
+            {
+                "id": "javascript",
+                "name": "JavaScript"
+            },
+            {
+                "id": "jquery",
+                "name": "jQuery"
+            },
+            {
+                "id": "angular",
+                "name": "Angular"
+            },
+            {
+                "id": "react",
+                "name": "React"
+            },
+            {
+                "id": "vue",
+                "name": "Vue"
+            }
+        ]
+    },
+    {
+        "id": "backEnd",
+        "name": "後端",
+        "child": [
+            {
+                "id": "php",
+                "name": "PHP"
+            },
+            {
+                "id": "java",
+                "name": "Java"
+            },
+            {
+                "id": "python",
+                "name": "Python"
+            },
+            {
+                "id": "nodejs",
+                "name": "Node.js"
+            }
+        ]
+    },
+    {
+        "id": "devops",
+        "name": "DevOps",
+        "child": [
+            {
+                "id": "linux",
+                "name": "Linux"
+            },
+            {
+                "id": "docker",
+                "name": "Docker"
+            },
+            {
+                "id": "kubernetes",
+                "name": "Kubernetes"
+            },
+            {
+                "id": "jenkins",
+                "name": "Jenkins"
+            }
+        ]
+    },
+    {
+        "id": "mis",
+        "name": "MIS",
+        "child": [
+            {
+                "id": "sql",
+                "name": "SQL"
+            },
+            {
+                "id": "nosql",
+                "name": "NoSQL"
+            },
+            {
+                "id": "bigdata",
+                "name": "Big Data"
+            },
+            {
+                "id": "aws",
+                "name": "AWS"
+            },
+            {
+                "id": "azure",
+                "name": "Azure"
+            },
+            {
+                "id": "gcp",
+                "name": "GCP"
+            }
+        ]
+    }
+]
