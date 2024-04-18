@@ -3,6 +3,9 @@
     "id": 286,
     "name": "JavaScript & TypeScript 前端工程師入門班",
     "photo": "https://i.meee.com.tw/Ej4zngF.jpg",
+    "description": "從基礎、進階、應用全面規劃，帶您學會前端工程師需要 JavaScript 與 TypeScript 的必備知識與應用能力！",
+    "url": "https://thecodingpro.com/courses/javascript",
+    "moreUrl": "https://thecodingpro.com/courses",
     "money": 3200,
     "teacher": {
       "name": "Mike",
@@ -15,6 +18,9 @@
     "id": 419,
     "name": "Nuxt3 高效入門全攻略",
     "photo": "https://i.meee.com.tw/tl15vTg.jpg",
+    "description": "本次課程屬 Nuxt3 的進階課程，你將會學習到 Nuxt3 相關的核心概念，並了解如何使用 Nuxt3 所提供的功能，來開發一個 SSR 的 Vue 網頁！也因此購課前提醒，學習者需有 Vue 開發經驗者為佳，強烈不建議完全的新手加入本課程。",
+    "url": "https://thecodingpro.com/courses/nuxt3",
+    "moreUrl": "https://thecodingpro.com/courses",
     "money": 3800,
     "teacher": {
       "name": "Mike",
@@ -27,6 +33,9 @@
     "id": 418,
     "name": "Vue3 高效入門與實踐",
     "photo": "https://i.meee.com.tw/1lLOE1Z.jpg",
+    "description": "本課程將帶你一步步的學習理解 Vue3 每個重要的語法以及搭配 TypeScript 進行開發，讓同學們可以嘗試處理專案上面周邊技術的整合應用，以及體驗更真實的實際開發會遇到的問題情境，來教你思考解決如何解決問題，你將會一步步的學習到前端工程師在開發專案時的經驗過程。",
+    "url": "https://thecodingpro.com/courses/vue3",
+    "moreUrl": "https://thecodingpro.com/courses",
     "money": 2600,
     "teacher": {
       "name": "Mike",
