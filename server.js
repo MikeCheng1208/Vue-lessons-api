@@ -9,6 +9,7 @@ const cityJson = require("./city.json");
 const coursesJson = require("./courses.json");
 const filterTag = require("./filterTag.json");
 const productList = require("./productList.json");
+const postCard = require("./post_card.json");
 
 const { PORT = 9527, HOST = "localhost" } = process.env;
 
@@ -339,4 +340,9 @@ app.get("/nav/tags/product", (req, res) => {
     return;
   }
   res.json(productList);
+});
+
+// 卡片列表
+app.get("/post/card", (req, res) => {
+  res.json(postCard);
 });
